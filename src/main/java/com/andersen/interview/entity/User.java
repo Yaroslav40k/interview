@@ -1,5 +1,7 @@
 package com.andersen.interview.entity;
 
+import java.util.Locale;
+
 import javax.persistence.Column;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -33,6 +35,9 @@ public class User {
 
     @Column(name = "is_active")
     private boolean is_active = true;
+
+    @Column
+    private Locale locale;
 
     @Column
     @Enumerated(EnumType.STRING)
