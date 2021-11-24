@@ -30,10 +30,5 @@ public class UserService {
         return  updatedUser;
     }
 
-    public Long changeBillingCountry(List<User> users) {
-        //TODO change billing country to FR only for last
-        // three users those name starts with "F" return the number of updated users
-       return 0L;
-    }
 
 }

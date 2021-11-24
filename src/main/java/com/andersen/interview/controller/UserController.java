@@ -27,11 +27,8 @@ public class UserController {
 
     @PostMapping("/updateUser")
     public User updateUser(@RequestBody User user) {
+
         return userService.updateUser(user);
     }
 
-    @PostMapping ("/changeBillingCountryToFr")
-    public Long changeBillingCountry(@RequestBody List<User> users) {
-        return userService.changeBillingCountry(users);
-    }
 }
